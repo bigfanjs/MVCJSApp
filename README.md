@@ -1,0 +1,1 @@
+# Manually implementing MVC design pattern in JavaScript.
