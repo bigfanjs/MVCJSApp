@@ -8,7 +8,7 @@ The Model-View-Controller is such a great web-based architectural design pattern
 - + your code would be more modulare.
 - + it's less painfull to debug.
 
-## Useage
+## Usage
 
 const
 	model = Model.setup({
