@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> MVC </title>
+    <style type="text/css">
+      div#container {
+        text-align: center;
+      }
+      thead tr th {
+        text-align: center;
+      }
+
+      .update-blog, .cancel {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/externals/qunit.js"></script>
+    <script type="text/javascript" src="js/externals/underscore-min.js"></script>
+    <script type="text/javascript" src="js/externals/jquery.js"></script>
+    <script type="text/javascript" src="js/externals/backbone-min.js"></script>
+    <script type="text/javascript" src="js/script6.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>An MVC App</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th>Url</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td><input class="form-control author-input"></td>
+            <td><input class="form-control title-input"></td>
+            <td><input class="form-control url-input"></td>
+            <td><button class="btn btn-primary add-blog">Add</button></td>
+          </tr>
+        </thead>
+        <tbody class="blogs-list" ></tbody>
+      </table>
+    </div>
+
+    <script type="text/template" class="blog-list-template">
+      <td><span class="author"><%= author %></span></td>
+      <td><span class="title"><%= title %></span></td>
+      <td><span class="url"><%= url %></span></td>
+      <td>
+        <button class="btn btn-warning edit-blog" >Edit</button>
+        <button class="btn btn-danger delete-blog" >Delete</button>
+        <button class="btn btn-success update-blog" >Update</button>
+        <button class="btn btn-danger cancel" >Cancel</button>
+      </td>
+    </script>
+  </body>
+</html>
