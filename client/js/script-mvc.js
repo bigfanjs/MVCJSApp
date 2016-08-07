@@ -1,13 +1,3 @@
-/************************************************************************************************
-- Disadvantages:
-- + it's a bit complicated to build it yourself. 
-- + it requires a basic understanding of MVC pattern. 
-- + it requires a basic understanding of native JS API.
-- Advantages:
-- + your code would be more modulare.
-- + it's less painfull to debug.
--__|| A far bit enhanced version of the app by manually implementing MVC desgin pattern ||__*/
-
 const
   assign = Object.assign,
   create = Object.create,
@@ -258,8 +248,8 @@ $( document ).ready(() => {
       title: title_input.val(),
       url: url_input.val()
     }).save(
-      () => { console.log('correctelly saved model'); },
-      () => { console.log('something bad happend at saving!'); }
+      () => { console.log('Correctelly saved model'); },
+      () => { console.log('Something bad happend at saving!'); }
     );
 
     let list_view = View.setup().subscribe( model );
